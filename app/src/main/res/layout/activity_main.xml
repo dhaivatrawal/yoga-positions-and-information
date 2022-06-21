@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2f2234">
+    <RelativeLayout
+        android:id="@+id/qqq"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"/>
+
+        <ImageView
+            android:id="@+id/rateMe"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/rate"
+            android:layout_toLeftOf="@id/share"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"/>
+
+        <ImageView
+            android:id="@+id/buttonShowCustomDialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menu"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ppp"
+        android:layout_below="@id/qqq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtone"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/reg"
+            android:textColor="#ffffff"
+            android:textSize="38dp"
+            android:text="YogaPedia"/>
+
+        <View
+            android:id="@+id/vone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtone"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"/>
+    </RelativeLayout>
+
+<ImageView
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="305dp"
+    android:src="@drawable/graphic"
+    android:scaleType="fitXY"
+    ></ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ppp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginRight="50dp"
+        android:background="#1f1623">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1f1623"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/ccdfour"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Benefits of Yoga"
+                android:textColor="#ffffff"
+                android:textSize="23sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:background="#FFFFFF"/>
+            <TextView
+                android:id="@+id/ccdone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Beginner Yoga Poses"
+                android:textColor="#ffffff"
+                android:textSize="23sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/ccdtwo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Intermediate Yoga Poses"
+                android:textColor="#ffffff"
+                android:textSize="23sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:background="#FFFFFF"/>
+            <TextView
+                android:id="@+id/ccdthree"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Advance Yoga Poses"
+                android:textColor="#ffffff"
+                android:textSize="23sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"></TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
